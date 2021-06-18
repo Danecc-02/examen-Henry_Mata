@@ -1,0 +1,107 @@
+﻿@model examenHenryMata.Models.Identificacion
+
+@{
+    ViewData["Title"] = "Agregar Identificacion";
+
+}
+
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-justify"></div>
+    <input type="hidden" asp-for="IdentificacionId" />
+    <div class="row mb-3">
+        <label asp-for="IdentificacionCodigo" class="col-sm-2 col-form-label">        </label>
+        <div class="col-sm-2">
+            <input class="form-control" asp-for="IdentificacionCodigo" placeholder="xxx-xxx-xxx">
+            <span asp-validation-for="IdentificacionCodigo" class="text-danger"></span>
+        </div>
+
+        <label asp-for="IdentificacionTelefono" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-4">
+            <input class="form-control" asp-for="IdentificacionTelefono" placeholder="Telefono...">
+            <span asp-validation-for="IdentificacionTelefono" class="text-danger"></span>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="row mb-3">
+        <label asp-for="IdentificacionApellido" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-2">
+            <input class="form-control" asp-for="IdentificacionApellido" placeholder="Perez...">
+            <span asp-validation-for="IdentificacionApellido" class="text-danger"></span>
+        </div>
+
+        <label asp-for="IdentificacionCelular" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-4">
+            <input class="form-control" asp-for="IdentificacionCelular" placeholder="Celular...">
+            <span asp-validation-for="IdentificacionCelular" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="IdentificacionNombres" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-2">
+            <input class="form-control" asp-for="IdentificacionNombres" placeholder="Juan Miguel...">
+            <span asp-validation-for="IdentificacionNombres" class="text-danger"></span>
+        </div>
+
+        <label asp-for="IdentificacionFax" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-4">
+            <input class="form-control" asp-for="IdentificacionFax" placeholder="Fax...">
+            <span asp-validation-for="IdentificacionFax" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="IdentificacionApodo" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-2">
+            <input class="form-control" asp-for="IdentificacionApodo" placeholder="Apodo...">
+            <span asp-validation-for="IdentificacionApodo" class="text-danger"></span>
+        </div>
+
+        <label asp-for="IdentificacionEmail" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-4">
+            <input class="form-control" asp-for="IdentificacionEmail" placeholder="ejemplo@gmail.com">
+            <span asp-validation-for="IdentificacionEmail" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="IdentificacionDireccion" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-2">
+            <input class="form-control" asp-for="IdentificacionDireccion" placeholder="Direccion...">
+            <span asp-validation-for="IdentificacionDireccion" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="IdentificacionCodigoPostal" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-2">
+            <input class="form-control" asp-for="IdentificacionCodigoPostal" placeholder="0401...">
+            <span asp-validation-for="IdentificacionCodigoPostal" class="text-danger"></span>
+        </div>
+    </div>
+
+
+
+    <div class="mb-3">
+        <label asp-for="observaciones" class="col-sm-2 col-form-label"></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" asp-for="observaciones"></textarea>
+    </div>
+
+
+    <div class="form-group">
+
+        <span asp-validation-for="observaciones" class="col-sm-2 col-form-label"></span>
+
+        <input type="submit" value="Guardar" class="btn btn-outline-success" />
+        <a asp-action="Index" class=" btn btn-outline-warning">Regresar</a>
+    </div>
+
+
+
+</form>
